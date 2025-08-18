@@ -401,6 +401,169 @@ body {
     }
 }
 
+/* プライバシーポリシーページ */
+.privacy-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.privacy-header {
+    text-align: center;
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+}
+
+.privacy-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.last-updated {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.privacy-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.privacy-section h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 0.5rem;
+}
+
+.privacy-section h3 {
+    font-size: 1.2rem;
+    color: #495057;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.privacy-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.privacy-section ul {
+    margin: 1rem 0 1rem 1.5rem;
+    color: #555;
+}
+
+.privacy-section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* 第三者サービス */
+.service-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #17a2b8;
+    margin: 1.5rem 0;
+}
+
+.service-item h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.service-item a {
+    color: #17a2b8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.service-item a:hover {
+    text-decoration: underline;
+}
+
+/* お問い合わせ情報 */
+.contact-info {
+    background: #e7f3ff;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #007bff;
+}
+
+.contact-details {
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+.contact-details p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.contact-details a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* フッター */
+.privacy-footer {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* プライバシーポリシー用レスポンシブデザイン */
+@media (max-width: 768px) {
+    .privacy-container {
+        padding: 2rem 1rem;
+    }
+    
+    .privacy-header {
+        padding: 2rem 1.5rem;
+    }
+    
+    .privacy-header h1 {
+        font-size: 2rem;
+    }
+    
+    .privacy-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .privacy-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .service-item,
+    .contact-info {
+        padding: 1.2rem;
+    }
+}
+
 /* スムーススクロール */
 html {
     scroll-behavior: smooth;
