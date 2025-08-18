@@ -213,6 +213,131 @@ body {
     margin: 0;
 }
 
+/* サブ期間表示 */
+.role-title {
+    font-size: 1.1rem;
+    color: #495057;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.sub-period {
+    color: #6c757d;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+/* プロジェクトショーケース */
+.project-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.project-item {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid #28a745;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-item h3 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.project-date {
+    color: #28a745;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.project-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.project-summary {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.project-summary p {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.project-summary strong {
+    font-size: 1.2rem;
+}
+
+/* 受賞・資格 */
+.award-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #fff8e1;
+    border-radius: 10px;
+    border-left: 4px solid #ffc107;
+}
+
+.award-item:last-child {
+    margin-bottom: 0;
+}
+
+.award-item h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.award-date {
+    color: #ffc107;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.award-item p:not(.award-date) {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
+.award-item ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.award-item li {
+    margin-bottom: 0.3rem;
+    position: relative;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.award-item li:before {
+    content: "🏆";
+    position: absolute;
+    left: -1.2rem;
+}
+
 /* 趣味タグ */
 .hobbies {
     display: flex;
@@ -261,6 +386,18 @@ body {
     
     .hobbies {
         justify-content: center;
+    }
+    
+    .project-showcase {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-summary {
+        padding: 1.5rem;
+    }
+    
+    .award-item {
+        padding: 1.2rem;
     }
 }
 
